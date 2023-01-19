@@ -1,6 +1,5 @@
 Make IBD Plots and Run Mantel Test
 ================
-Alex Krohn[^1]
 
 ## Introduction
 
@@ -59,8 +58,5 @@ plot(geodist/1000, as.matrix(1 - geno.matrix), ylab = expression(paste("Pairwise
 # Run the Mantel Test
 
 ``` r
-library(vegan)
 vegan::mantel(geodist, geno.matrix, permutations = 999)
 ```
-
-[^1]: <alex@tbconservation.org>
